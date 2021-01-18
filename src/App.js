@@ -1,23 +1,20 @@
 import React from 'react'
-import CoinAppComponents from './Coin/CoinAppComponents'
-import Navbar from './Navbar';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Hero from './Hero';
+import {BrowserRouter as Router} from 'react-router-dom'
+import Cards  from './components/Cards';
+import CoinAppComponents from './components/Coin/CoinAppComponents';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 import { HeroData, HeroDataThree, HeroDataTwo, HeroDataFour } from './Data/HeroData';
 function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/">
           <Hero {...HeroData} />
           <Hero {...HeroDataTwo} />
+          <Cards />
           <Hero {...HeroDataThree} />
           <Hero {...HeroDataFour} />
-        </Route>
-        <Route path="/discover" component={CoinAppComponents}>
-        </Route>
-      </Switch>
+          
       <CoinAppComponents/>
     </Router>
   );

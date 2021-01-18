@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavbarData } from '../Data/NavbarData'
+import {NavbarData} from '../../Data/NavbarData'
 import {
     NavbarSection,
     NavbarContainer,
