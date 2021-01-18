@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <NavbarSection>
             <NavbarContainer>
-                <NavbarLogo to="/">LOGO</NavbarLogo>
+                <NavbarLogo to="/">MENZ</NavbarLogo>
                 <NavbarUnOrderedList>
                     {NavbarData.map((navbar, index) => (
                         <NavbarListItem key={index}>
