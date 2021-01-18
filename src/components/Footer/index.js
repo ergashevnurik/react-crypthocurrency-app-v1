@@ -24,8 +24,8 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>About US</FooterLinkTitle>
                             
-                                <FooterLink to="/signin">
-                                    How we work
+                                <FooterLink to="/list">
+                                    List of Marks
                                 </FooterLink>
                                 <FooterLink to="/signin">
                                     Testimonials

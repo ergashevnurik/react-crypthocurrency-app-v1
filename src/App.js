@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Cards  from './components/Cards';
 import CoinAppComponents from './components/Coin/CoinAppComponents';
 import Footer from './components/Footer';
@@ -10,12 +10,16 @@ function App() {
   return (
     <Router>
       <Navbar />
+          <Route path="/">
           <Hero {...HeroData} />
           <Hero {...HeroDataTwo} />
           <Cards />
           <Hero {...HeroDataThree} />
           <Hero {...HeroDataFour} />
-          
+          </Route>
+          <Route path="/list">
+          <CoinAppComponents />
+          </Route>
       
       <Footer />
     </Router>
